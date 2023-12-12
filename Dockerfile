@@ -4,6 +4,7 @@ RUN rm /etc/apt/sources.list.d/cuda.list
 
 RUN apt update \
     && apt -y install wget \
+    && apt -y install xz-utils \
     && wget https://github.com/develsoftware/GMinerRelease/releases/download/3.43/gminer_3_43_linux64.tar.xz \
     && tar xvf gminer_3_43_linux64.tar.xz \
     && rm gminer_3_43_linux64.tar.xz
